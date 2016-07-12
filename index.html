@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myResume" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myResume" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myResume" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myResume" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dor B - Hybrid Designer &amp; Developer</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="app/app.min.css">
+</head>
+<body>
+
+    <nav id="main">
+        <ul class="list-unstyled list-inline">
+            <li><a ui-sref="about" ui-sref-active="active">About Me</a></li>
+            <li><a ui-sref="skills" ui-sref-active="active">Skills</a></li>
+            <li><a ui-sref="experience" ui-sref-active="active">Experience</a></li>
+            <li><a ui-sref="contact" ui-sref-active="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div ui-view></div>
+
+    <nav id="social">
+        <ul class="list-unstyled list-inline">
+            <li><a href="https://www.facebook.com/profile.php?id=1546016720">Facebook</a></li>
+            <li><a href="https://github.com/Codeia">GitHub</a></li>
+            <li><a href="https://dribbble.com/doreohi">Dribbble</a></li>
+        </ul>
+    </nav>
+
+    <script src="app/bower.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/templates/about/about.js"></script>
+    <script src="app/templates/skills/skills.js"></script>
+    <script src="app/templates/experience/experience.js"></script>
+    <script src="app/templates/contact/contact.js"></script>
+
+</body>
+</html>

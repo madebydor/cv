@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
+
+// @grid-gutter-width:         50px;
+// @container-md: 1190px;
+// @screen-lg-min: 1400px;
+// @container-lg: 990px;
+
+@mainborder: 30px;
+
+@default-font-size: 19px;
+
+body{
+    font-family: 'Lora', serif;
+    background: @bgcolor;
+    color: @base02;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    font-size: @default-font-size;
+    padding: @mainborder;
+    @media (max-width: @screen-sm-min) {
+        padding: 20px;
+        font-size: 18px;
+    }
+
+    &:before{
+        content: " ";
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border: @mainborder solid white;
+        z-index: 2;
+        pointer-events: none;
+        @media (max-width: @screen-sm-min) {
+            border-width: 10px;
+        }
+    }
+}
+
+a,
+a:visited{
+    color: @base02;
+}
+
+a:hover{
+    text-decoration: none;
+    color: @primary01;
+}
+
+p{
+    line-height: 2;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: 600;
+    color: @base01;
+    line-height: 1.5;
+
+    &.primary{
+        color: @primary01;
+    }
+}
+
+
+section{
+    margin: 190px 120px 0;
+    max-width: 590px;
+    &.bigger{
+        max-width: 900px;
+    }
+    @media (max-width: @screen-sm-min) {
+        margin: 140px 20px 0;
+    }
+}
+
+
+
+ul.bigger{
+    > li{
+        padding: 10px 0;
+    }
+}
+
+ul.medium{
+    > li{
+        padding: 4px 0;
+    }
+}
